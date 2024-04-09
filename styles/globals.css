@@ -507,7 +507,7 @@ tr:hover {
 
 .p-accordion-content img{
   border-radius: 10px;
-  padding: 50px;
+  padding: 0px;
   background-color: var(--reach-grey40);
 }
 
@@ -642,9 +642,78 @@ button {
   margin-left: 0rem;
 }
 
+
+/* Headline */
+#pr_id_2_content_0 :nth-last-child(1) {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Lead Text */
+#pr_id_2_content_1 :nth-last-child(1) {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Byline */
+#pr_id_2_content_2 :nth-last-child(1) {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Body Copy */
+#pr_id_2_content_3 :nth-last-child(1) {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Image */
+#pr_id_2_content_4 :nth-last-child(1) {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* CTA */
+#pr_id_2_content_5 :nth-last-child(1) {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 1100px) {
+
   .p-accordion-content{
   grid-template-columns: 100%;
   grid-gap: 30px 0px;
   }
+
+  #pr_id_2_content_0 :nth-last-child(1) {
+  height: 100%;
+  }
+
+  #pr_id_2_content_1 :nth-last-child(1) {
+  height: 100%;
+  }
+
+  #pr_id_2_content_2 :nth-last-child(1) {
+  height: 100%;
+  }
+
+  #pr_id_2_content_3 :nth-last-child(1) {
+  height: 100%;
+  }
+
+  #pr_id_2_content_4 :nth-last-child(1) {
+  height: 100%;
+  }
+
+  #pr_id_2_content_5 :nth-last-child(1) {
+  height: 100%;
+  }
+  
 }
