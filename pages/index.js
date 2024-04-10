@@ -647,7 +647,7 @@ export default function Home() {
           <li>It must not include excessive punctuation or ALL CAPS</li>
         </ul>
         </span>
-        <img src="https://i.imgur.com/MDfKazZ.png" />
+        <img src="https://i.imgur.com/NiuyVgH.png" />
         </AccordionTab>
         <AccordionTab header="Lead text">
         <span>
@@ -659,7 +659,7 @@ export default function Home() {
           <li>Keywords relating to the article should be included - but must fit naturally and read well</li>
         </ul>
         </span>
-        <img src="https://i.imgur.com/QrdZPMQ.png" />
+        <img src="https://i.imgur.com/gISOLK1.png" />
         </AccordionTab>
         <AccordionTab header="Byline">
         <span>
@@ -671,7 +671,7 @@ export default function Home() {
           <li>This does not necessarily have to be the exact way the company is referred to in the body copy - eg. the Reach style guide removes elements such as &apos;Ltd&apos; or &apos;Plc&apos; in article text, but those can be included here</li>
         </ul>
         </span>
-        <img src="https://i.imgur.com/zc4CfnO.png" />
+        <img src="https://i.imgur.com/HOrzC4U.png" />
         </AccordionTab>
         <AccordionTab header="Body copy">
         <span>
@@ -684,7 +684,7 @@ export default function Home() {
           <li>Ensure your writing flows smoothly and communicates your message effectively</li>
         </ul>
         </span>
-        <img src="https://i.imgur.com/lGzE0Zy.png" />
+        <img src="https://i.imgur.com/csUZplT.png" />
         </AccordionTab>
         <AccordionTab header="Images">
         <span>
@@ -697,7 +697,7 @@ export default function Home() {
           <li>By providing the images you are confirming that you hold the copyright and permission to use them for commercial purposes</li>
         </ul>
         </span>
-        <img src="https://i.imgur.com/lyfIiMk.png" />
+        <img src="https://i.imgur.com/RbefKew.png" />
         </AccordionTab>
         <AccordionTab header="Call to Action">
         <span>
@@ -709,7 +709,7 @@ export default function Home() {
           <li>It should be a clear signpost to readers on how to get in touch, i.e. via your website or social media channels</li>
         </ul>
         </span>
-        <img src="https://i.imgur.com/f6KKipp.png" />
+        <img src="https://i.imgur.com/Fu938cd.png" />
         </AccordionTab>
         </Accordion>
       </div>
