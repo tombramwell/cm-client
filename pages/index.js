@@ -727,7 +727,7 @@ export default function Home() {
         <p>Please provide as much information as possible. The writer may get in touch should any points of clarification be required, but this may delay the publication of the article.</p>
         <p>If you have any images that you would like us to include, please provide them - though they must follow the guidelines in the Images section of the Supplied specification above.</p>
         <p>Once completed, click the Save button and a PDF will be downloaded to your device. Please email this, along with any images to be included, directly to your Reach account manager who will process it along with the Content Marketing booking.</p>
-        <p><a href="https://reachcreativestudio.com/cmspecs/form">Click here</a> to access the Bespoke Content Marketing Request Form.</p>
+        <p><a href="https://reachcreativestudio.com/cmspecs/form" target="_blank">Click here</a> to access the Bespoke Content Marketing Request Form.</p>
       </div>
     </div>
     </main>
