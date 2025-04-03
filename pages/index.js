@@ -15,51 +15,51 @@ export default function Home() {
   const data = [
     {"id": 1,
     "package": "Maximum word count",
-    "supplied": 500,
+    // "supplied": 500,
     "research": 500,
     "bespoke": 750,
     "restricted": 3000 },
     {"id": 2,
     "package": "Assets required",
-    "supplied": "Press release or usable content",
+    // "supplied": "Press release or usable content",
     "research": "Content brief and minimum of 5 bullet points",
     "bespoke": "Bespoke Questionnaire",
     "restricted": "Restricted Sector Brief"},
     {"id": 3,
     "package": "Images",
-    "supplied": "3",
+    // "supplied": "3",
     "research": "3",
     "bespoke": "6",
     "restricted": "11"},
     {"id": 4,
     "package": "Video",
-    "supplied": "Only with min. Advanced amplification",
+    // "supplied": "Only with min. Advanced amplification",
     "research": "Only with min. Advanced amplification",
     "bespoke": "Video upload included",
     "restricted": "Video cannot be included in Restricted Sector bookings"},
     {"id": 5,
     "package": "URLs",
-    "supplied": "All links to sit within final CTA paragraph",
+    // "supplied": "All links to sit within final CTA paragraph",
     "research": "All links to sit within final CTA paragraph",
     "bespoke": "6 maximum",
     "restricted": "10 maximum"},
     {"id": 7,
     "package": "Live for",
-    "supplied": "No expiry",
+    // "supplied": "No expiry",
     "research": "No expiry",
     "bespoke": "No expiry",
     "restricted": "3 months"},
       {
       "id": 12,
       "package": "Amends",
-      "supplied": "1 set",
+      // "supplied": "1 set",
       "research": "2 sets",
       "bespoke": "2 sets",
       "restricted": "2 sets"
     },
     {"id": 13,
     "package": "Proofing",
-    "supplied": "2 days to provide amends, otherwise article is published and no further changes can be made",
+    // "supplied": "2 days to provide amends, otherwise article is published and no further changes can be made",
     "research": "3 days to provide amends, otherwise article is published and no further changes can be made",
     "bespoke": "5 days to provide amends, otherwise article is published and no further changes can be made",
     "restricted": "No fixed time limit due to nature of content and legal complexities"
@@ -619,7 +619,7 @@ export default function Home() {
         <div id="packagesTable" className="m-5">
             <DataTable value={data} className="pt-5 pb-5" showGridlines>
                 <Column field="package" frozen header=" " body={packageTemplate}></Column>
-                <Column field="supplied" header="Supplied" body={suppliedTemplate}></Column>
+                {/* <Column field="supplied" header="Supplied" body={suppliedTemplate}></Column> */}
                 <Column field="research" header="Research" body={researchTemplate}></Column>
                 <Column field="bespoke" header="Bespoke" body={bespokeTemplate}></Column>
                 <Column field="restricted" header="Restricted" body={restrictedTemplate}></Column>
@@ -635,12 +635,12 @@ export default function Home() {
         <p>It should focus on providing truly relevant and useful content that our audience can use to help them solve their issues - ultimately driving profitable customer action by converting the reader into your consumer.</p>
      </div>
       <div id="supplied" className="m-5">
-        <h2>Supplied</h2>
+        <h2>Article structure</h2>
         <Accordion>
         <AccordionTab header="Headline">
         {/* <h3>Headline</h3> */}
         <span>
-        <p>Aim for 60-80 characters long, maximum 100.</p>
+        <p>60-80 characters long, maximum 100.</p>
         <p>Top tips:</p>
         <ul>
           <li>The headline should accurately reflect what the article is about</li>
@@ -663,7 +663,7 @@ export default function Home() {
         </AccordionTab>
         <AccordionTab header="Byline">
         <span>
-        <p>Add the name of your company in the byline section</p>
+        <p>Company name in the byline section</p>
         <p>Top tips:</p>
         <ul>
           <li>The byline will appear at the very top of the article and is a legal requirement mandated by the Advertising Standards Agency</li>
@@ -675,7 +675,7 @@ export default function Home() {
         </AccordionTab>
         <AccordionTab header="Body copy">
         <span>
-        <p>Maximum of 500 words in total. Aim for every paragraph to be one or two sentences long - this makes the content more readable on mobile devices and helps with Google indexing. The intro line is recommended to be brief - a maximum of 100 words. Break down the text with suitable subheadings where necessary. These can include keywords</p>
+        <p>Maximum of 500 words in total. Our style guide is to aim for every paragraph to be one or two sentences long - this makes the content more readable on mobile devices and helps with Google indexing. The intro line is recommended to be brief - a maximum of 100 words. Text is broken down with suitable subheadings where necessary</p>
         <br />
         <p>Top tips:</p>
         <ul>
@@ -688,7 +688,7 @@ export default function Home() {
         </AccordionTab>
         <AccordionTab header="Images">
         <span>
-          <p>A maximum of 3 images can be included in a Supplied article. To include additional images, a Bespoke package must be purchased.</p>
+          <p>A maximum of 3 images can be included in a Research article. To include additional images, a Bespoke package must be purchased.</p>
           <p>Top tips:</p>
         <ul>
           <li>Images must be clean, text-free and in a 3:2 landscape ratio</li>
@@ -705,7 +705,7 @@ export default function Home() {
         <p>Top tips:</p>
         <ul>
           <li>This text will be bolded and stand out to reader</li>
-          <li>The Call to Action is the only place within a Supplied article where links can be included</li>
+          <li>The Call to Action is the only place within a Research article where links can be included</li>
           <li>It should be a clear signpost to readers on how to get in touch, i.e. via your website or social media channels</li>
         </ul>
         </span>
@@ -727,7 +727,7 @@ export default function Home() {
         <p>Please provide as much information as possible. The writer may get in touch should any points of clarification be required, but this may delay the publication of the article.</p>
         <p>If you have any images that you would like us to include, please provide them - though they must follow the guidelines in the Images section of the Supplied specification above.</p>
         <p>Once completed, click the Save button and a PDF will be downloaded to your device. Please email this, along with any images to be included, directly to your Reach account manager who will process it along with the Content Marketing booking.</p>
-        <p><a href="https://reachcreativestudio.com/cmspecs/form" target="_blank">Click here</a> to access the Bespoke Content Marketing Request Form.</p>
+        <span><p><strong><u><a href="/contentmarketing/form" target="_blank">Click here to access the Bespoke Content Marketing Request Form.</a></u></strong></p></span>
       </div>
     </div>
     </main>

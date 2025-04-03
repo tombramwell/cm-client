@@ -61,24 +61,24 @@ export default function Form() {
   addTextWithStyles(`${industry}`, false)
   addTextWithStyles('Target audience: ', true)
   addTextWithStyles(`${targetAudience}`, false)
-  addTextWithStyles('Reason for advertising: ', true)
-  addTextWithStyles(`${reason}`, false)
+  // addTextWithStyles('Reason for advertising: ', true)
+  // addTextWithStyles(`${reason}`, false)
   addTextWithStyles('Key messaging: ', true)
   addTextWithStyles(`${keyMessaging}`, false)
-  addTextWithStyles('Background info: ', true)
-  addTextWithStyles(`${backgroundInfo}`, false)
-  addTextWithStyles('Events/Offers: ', true)
-  addTextWithStyles(`${eventsOffers}`, false)
-  addTextWithStyles('Images/Video: ', true)
-  addTextWithStyles(`${imagesVideo}`, false)
-  addTextWithStyles('Quotes: ', true)
-  addTextWithStyles(`${quotes}`, false)
-  addTextWithStyles('Reference points: ', true)
-  addTextWithStyles(`${referencePoints}`, false)
+  // addTextWithStyles('Background info: ', true)
+  // addTextWithStyles(`${backgroundInfo}`, false)
+  // addTextWithStyles('Events/Offers: ', true)
+  // addTextWithStyles(`${eventsOffers}`, false)
+  // addTextWithStyles('Images/Video: ', true)
+  // addTextWithStyles(`${imagesVideo}`, false)
+  // addTextWithStyles('Quotes: ', true)
+  // addTextWithStyles(`${quotes}`, false)
+  // addTextWithStyles('Reference points: ', true)
+  // addTextWithStyles(`${referencePoints}`, false)
   addTextWithStyles('Additional info: ', true)
   addTextWithStyles(`${additionalPoints}`, false)
-  addTextWithStyles('Contact details: ', true)
-  addTextWithStyles(`${contactDetails}`, false)
+  // addTextWithStyles('Contact details: ', true)
+  // addTextWithStyles(`${contactDetails}`, false)
 
 
 
@@ -91,7 +91,14 @@ export default function Form() {
     <>
     <main className="min-h-screen pt-5">
     <div className="ml-10">
-        <div id="bespokeForm" className="m-5">
+        <div id="bespokeForm">
+          <small id="bespokeForm-help">
+            <br />
+          The following form has been designed to provide all of the information required to craft a quality Bespoke content marketing article that delivers exceptional results.<br />
+Please provide as much information as possible. The writer may get in touch should any points of clarification be required, but this may delay the publication of the article.<br />
+Once completed, click the Save button and a PDF will be downloaded to your device. Please email this, along with any images to be included, directly to your Reach account manager who will process it along with the Content Marketing booking.<br />
+A press release can be provided alongside this form, but cannot be published unedited and at the very minimum, will be adapted to ensure maximum performance and compliance with necessary style guides and advertising standards.
+          </small>
         <div className="flex flex-column gap-2">
           <br />
           <label htmlFor="businessName">Business name</label>
@@ -101,33 +108,44 @@ export default function Form() {
           <InputText id="businessName" aria-describedby="businessName-help" value={businessName} onChange={(e) => setBusinessName(e.target.value)} />
         </div>
         <div className="flex flex-column gap-2">
-          <label htmlFor="industry">Industry</label>
-          <InputText id="industry" value={industry} onChange={(e) => setIndustry(e.target.value)} />
+          <label htmlFor="industry">Background</label>
+          <small id="industry-help">
+            <ul>
+                <li>What industry does your business operate in?</li>
+                <li>What is the story behind your business? How, why and when was it founded? </li>
+                <li>What is unique about your business? What sets you apart from your competitors? </li>
+            </ul>
+          </small>
+          <InputTextarea autoResize id="industry" value={industry} onChange={(e) => setIndustry(e.target.value)} rows={5} cols={30} />
         </div>
         <div className="flex flex-column gap-2">
-          <label htmlFor="targetAudience">Target audience</label>
+          <label htmlFor="targetAudience">Target audience and campaign goals</label>
           <small id="targetAudience-help">
-              What can you tell us about the people you want to target?
+            <ul>
+                <li>Who is your ideal customer? What problems do you help them solve?</li>
+                <li>What message do you want to convey to both your ideal customer and our readers through this campaign?</li>
+                <li>Why are you investing in this campaign now? Are you launching a new product, increasing brand awareness, hosting an open day or other special event etc</li>
+            </ul>
           </small>
           <InputTextarea autoResize value={targetAudience} aria-describedby="targetAudience-help" onChange={(e) => setTargetAudience(e.target.value)} rows={5} cols={30} />
         </div>
-        <div className="flex flex-column gap-2">
+        {/* <div className="flex flex-column gap-2">
           <label htmlFor="reasoning">Reason for advertising</label>
           <InputTextarea autoResize value={reason} onChange={(e) => setReason(e.target.value)} rows={5} cols={30} />
-        </div>
+        </div> */}
         <div className="flex flex-column gap-2">
           <label htmlFor="keyMessaging">Key messaging: What are the important things you want to say about your business?</label>
           <small id="keyMessaging-help">
               <ul>
-                <li>What are your USPs? Have you won any awards?</li>
-                <li>What makes you stand out from your competitors?</li>
+                <li>What are your USPs? What makes you stand out from your competitors?</li>
                 <li>What do your customers/clients like about your business?</li>
                 <li>What about your business makes you most proud?</li>
+                <li>Tell us something about your business that will really wow our readers. Is there an interesting, inspiring, incredible or totally unbelievable story about your business?</li>
               </ul>
           </small>
           <InputTextarea autoResize value={keyMessaging} aria-describedby="keyMessaging-help" onChange={(e) => setKeyMessaging(e.target.value)} rows={7} cols={30} />
         </div>
-        <div className="flex flex-column gap-2">
+        {/* <div className="flex flex-column gap-2">
           <label htmlFor="backgroundInfo">Please provide some background information about your business</label>
           <small id="backgroundInfo-help">
             You can include business history, location(s), key directors&apos; or employees&apos; background, mission statements and anything else you feel it is important to include
@@ -158,15 +176,21 @@ export default function Form() {
             E.g. website, social media channels or previous articles that may be useful to form part of the writer&apos;s research
           </small>
           <InputTextarea autoResize value={referencePoints} aria-describedby="referencePoints-help" onChange={(e) => setReferencePoints(e.target.value)} rows={5} cols={30} />
-        </div>
+        </div> */}
         <div className="flex flex-column gap-2">
-          <label htmlFor="additionalPoints">Is there anything else that hasn&apos;t been covered that you&apos;d like to be included in this article?</label>
+          <label htmlFor="additionalPoints">Final details</label>
+          <small id="additionalPoints-help">
+            <ul>
+            <li>Are there any specific calls to action you&apos;d like us to include?</li>
+            <li>Alongside a link to your website, is there an email address or phone number you&apos;d like us to share?</li>
+            </ul>
+          </small>
           <InputTextarea autoResize value={additionalPoints} onChange={(e) => setAdditionalPoints(e.target.value)} rows={5} cols={30} />
         </div>
-        <div className="flex flex-column gap-2">
+        {/* <div className="flex flex-column gap-2">
           <label htmlFor="contactDetails">Please provide your contact details should the writer need to contact you for any clarification</label>
           <InputTextarea autoResize value={contactDetails} onChange={(e) => setContactDetails(e.target.value)} rows={5} cols={30} />
-        </div>
+        </div> */}
         <div className="card flex justify-content-center">
             <Button label="Download" onClick={() => generatePDF()}  />
             <small>iOS users will need to &apos;Share&apos; the generated file</small>
